@@ -11,11 +11,11 @@
             }else{
                 if(tkcal<800){
                     document.querySelector('#result').textContent=`Total cals: ${tkcal} Kcals , Repas équilibré`;
-                    document.querySelector('#result').style.borderColor='green';
+                    document.querySelector('#result').style.color='green';
 
                 }else{
                     document.querySelector('#result').textContent=`Total cals: ${tkcal} Kcals , Repas riche en calories`;
-                    document.querySelector('#result').style.borderColor='red';
+                    document.querySelector('#result').style.color='red';
                 }
             }
             });
