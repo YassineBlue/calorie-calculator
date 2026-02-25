@@ -1,0 +1,25 @@
+/* Responsive for mobile */
+@media (max-width: 790px) {
+    .myform {
+        width: 100% !important;
+    }
+}
+
+/* Extra colorization */
+h1 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+button#Calculer {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#result {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
