@@ -4,7 +4,12 @@
             let tkcalLegume = parseFloat(document.querySelector('#Légumes').value) * .5 ;
             let tkcalFruits = parseFloat(document.querySelector('#Fruits').value) * .6 ;
             let tkcalYaourt = parseFloat(document.querySelector('#Yaourt').value) * .8 ;
-            let tkcal = tkcalviande + tkcalpain + tkcalLegume + tkcalFruits + tkcalYaourt ; //total 
+            let tkcal = tkcalviande + tkcalpain + tkcalLegume + tkcalFruits + tkcalYaourt ; //total
+                tkcal = Number(tkcal);
+            if(isNaN(tkcal)){
+             alert("Please Enter only numbers ");
+             return ;
+            }
             if(tkcal<500){
                 document.querySelector('#result').textContent=`Total cals: ${tkcal} Kcals , Repas léger`;
                 document.querySelector('#result').style.color='orange';
