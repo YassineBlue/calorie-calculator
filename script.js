@@ -1,9 +1,9 @@
  document.querySelector('#Calculer').addEventListener('click',function(){
-            let tkcalviande = (parseFloat(document.querySelector('#Viande').value)|| 0) * 2.5;
+            let tkcalviande = (parseFloat(document.querySelector('#Viande').value) || 0) * 2.5;
             let tkcalpain =   (parseFloat(document.querySelector('#Pain').value) || 0) * 2.65;
             let tkcalLegume = (parseFloat(document.querySelector('#Légumes').value) || 0) * .5;
-            let tkcalFruits = (parseFloat(document.querySelector('#Fruits').value)|| 0) * .6;
-            let tkcalYaourt = (parseFloat(document.querySelector('#Yaourt').value)|| 0 ) * .8;
+            let tkcalFruits = (parseFloat(document.querySelector('#Fruits').value) || 0) * .6;
+            let tkcalYaourt = (parseFloat(document.querySelector('#Yaourt').value) || 0 ) * .8;
             //total
             let tkcal = tkcalviande + tkcalpain + tkcalLegume + tkcalFruits + tkcalYaourt ; 
             // case of empty inputs
